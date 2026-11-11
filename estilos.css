@@ -1,0 +1,355 @@
+/* =========================================================
+   1 · LA PALETA DEL CURSO
+   Se escribe UNA sola vez, acá arriba. Todo lo demás usa var().
+   ========================================================= */
+:root {
+  /* Colores de Boca Juniors */
+  --gris: #b1a7a6;
+  --azul: #003DA5;
+  --azul-oscuro: #001F5B;
+  --azul-medio: #002B6B;
+  --amarillo: #FFD100;
+  --amarillo-oscuro: #E6B800;
+  --amarillo-claro: #FFE45C;
+  --blanco: #ffffff;
+  --negro: #0b090a;
+
+  /* Variables para mantener el código original */
+  --rojo: var(--azul);
+  --rojo-900: #001633;
+  --rojo-800: #001F5B;
+  --rojo-700: #002B6B;
+  --rojo-500: #003DA5;
+  --rojo-300: #0A4AA6;
+  --rojo-200: #FFD100;
+  --rojo-100: #FFE45C;
+  --rojo-50: #E6B800;
+  --rojo-25: #FFD100;
+
+  --texto: #001F5B;
+  --texto-suave: #003DA5;
+
+  --e-1: .25rem;
+  --e-2: .5rem;
+  --e-3: 1rem;
+  --e-4: 1.5rem;
+  --e-5: 2rem;
+  --e-6: 3rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+ 
+  background: var(--azul-oscuro);
+  background-image: url(./asset/img/bombonera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+ 
+}
+.desp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border-top: 8px solid var(--amarillo);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta__logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.tarjeta__curso {
+  margin: .75rem 0 0;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--azul-oscuro);
+}
+
+.tarjeta__nombre {
+  margin: .4rem 0 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--azul-oscuro);
+}
+
+.tarjeta__frase {
+  margin: 1rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--azul);
+}
+
+.tarjeta__autor {
+  margin: 1.25rem 0 0;
+  font-size: .82rem;
+  color: var(--texto-suave);
+}
+
+.tarjeta__pregunta {
+  margin: 0;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--amarillo-oscuro);
+}
+
+.tarjeta__respuesta {
+  margin: .5rem 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.tarjeta__boton {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: .9rem 2rem;
+  border-radius: 999px;
+  background: var(--azul);
+  color: var(--amarillo);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tarjeta__boton:hover {
+  background: var(--azul-oscuro);
+  color: var(--amarillo);
+}
+
+.ficha {
+  max-width: 520px;
+  margin: var(--e-6) auto;
+  padding: var(--e-5);
+  border: 1px solid var(--amarillo);
+  border-top: 6px solid var(--azul);
+  border-radius: 12px;
+  background: var(--blanco);
+}
+
+.ficha__etiqueta {
+  margin: 0;
+  font-size: .75rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--amarillo-oscuro);
+}
+
+.ficha__titulo {
+  margin: var(--e-2) 0 var(--e-5);
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: var(--azul);
+}
+
+.ficha__campo {
+  margin: var(--e-4) 0 var(--e-1);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--azul);
+}
+
+.ficha__texto {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--texto);
+}
+
+.ficha__tags,
+.lista {
+  margin: var(--e-5) 0 0;
+  padding: 0;
+  display: flex;
+  gap: var(--e-2);
+  list-style: none;
+}
+
+.ficha__tags li,
+.lista li {
+  padding: var(--e-1) var(--e-3);
+  border-radius: 999px;
+  background: var(--azul);
+  color: var(--amarillo);
+  font-size: .8rem;
+}
+
+.container {
+  background-color: var(--azul-oscuro);
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.ideas {
+  background-color: var(--blanco);
+  width: 360px;
+  text-align: center;
+  border: 3px solid var(--amarillo);
+  padding: 30px;
+}
+
+.ideas__imagen img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+}
+
+.ideas__titulo {
+  font-size: medium;
+  color: var(--azul-oscuro);
+}
+
+.ideas__parrafo {
+  font-size: medium;
+  line-height: 1.55;
+}
+
+.ideas__enlace {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: .9rem 2rem;
+  border-radius: 999px;
+  background: var(--azul);
+  color: var(--amarillo);
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ideas__enlace:hover {
+  background: var(--amarillo);
+  color: var(--azul-oscuro);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--amarillo);
+}
+
+.container-header {
+  background: var(--azul-oscuro);
+  background: linear-gradient(
+    180deg,
+    var(--azul) 15%,
+    var(--azul-oscuro) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-logo {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.container-header nav {
+  padding: 10px;
+}
+
+.container-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 7px;
+}
+
+.container-header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--amarillo);
+  font-weight: 800;
+  font-size: 1.2rem;
+  transition: background-color 0.5s ease;
+}
+
+.container-header a:hover {
+  background-color: var(--amarillo);
+  color: var(--azul-oscuro);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.footer-top {
+  justify-content: space-between;
+  display: flex;
+}
+
+.footer-bottom {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  padding: 20px;
+  border-top: 3px solid var(--amarillo);
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom a {
+  color: var(--amarillo);
+}
+
+footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  border-width: 20px;
+  margin: 0;
+  padding: 14px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-top-col ul {
+  list-style: none;
+  font-size: larger;
+  padding-left: 0;
+}
+
+h4 {
+  font-size: x-large;
+  color: var(--amarillo);
+}
+
+.footer-bottom-legal a {
+  gap: 5px;
+  font-size: 12px;
+}
+
+.footer-top-btn {
+  background-color: var(--amarillo);
+  color: var(--azul-oscuro);
+  padding: 8px;
+  padding-bottom: 9px;
+  display: block;
+  text-align: center;
+}
