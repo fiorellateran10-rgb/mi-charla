@@ -3,31 +3,31 @@
    Se escribe UNA sola vez, acá arriba. Todo lo demás usa var().
    ========================================================= */
 :root {
-  /* Colores de Boca Juniors */
-  --gris: #b1a7a6;
-  --azul: #003DA5;
-  --azul-oscuro: #001F5B;
-  --azul-medio: #002B6B;
-  --amarillo: #FFD100;
-  --amarillo-oscuro: #E6B800;
-  --amarillo-claro: #FFE45C;
-  --blanco: #ffffff;
-  --negro: #0b090a;
+  /* Colores de Exclusivos */
+  --gris: #9A9FA3;
+  --azul: #6F8794;
+  --azul-oscuro: #26343B;
+  --azul-medio: #526B77;
+  --celeste: #B8CBD3;
+  --celeste-oscuro: #8FA8B3;
+  --celeste-claro: #DCE7EA;
+  --blanco: #F2F3F3;
+  --negro: #17191A;
 
   /* Variables para mantener el código original */
   --rojo: var(--azul);
-  --rojo-900: #001633;
-  --rojo-800: #001F5B;
-  --rojo-700: #002B6B;
-  --rojo-500: #003DA5;
-  --rojo-300: #0A4AA6;
-  --rojo-200: #FFD100;
-  --rojo-100: #FFE45C;
-  --rojo-50: #E6B800;
-  --rojo-25: #FFD100;
+  --rojo-900: #172126;
+  --rojo-800: #26343B;
+  --rojo-700: #344750;
+  --rojo-500: #6F8794;
+  --rojo-300: #8FA8B3;
+  --rojo-200: #B8CBD3;
+  --rojo-100: #DCE7EA;
+  --rojo-50: #9A9FA3;
+  --rojo-25: #F2F3F3;
 
-  --texto: #001F5B;
-  --texto-suave: #003DA5;
+  --texto: #26343B;
+  --texto-suave: #526B77;
 
   --e-1: .25rem;
   --e-2: .5rem;
@@ -40,33 +40,32 @@
 body {
   margin: 0;
   min-height: 100vh;
- 
-  background: var(--azul-oscuro);
-  background-image: url(./asset/img/bombonera.jpg);
+  background: var(--azul-medio);
+  background-image: url("./asset/img/exclusivos.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   color: var(--texto);
- 
 }
-.desp{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+.desp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .tarjeta {
   background: var(--blanco);
-  border-top: 8px solid var(--amarillo);
+  border-top: 8px solid var(--celeste);
   border-radius: 12px;
   padding: 2.5rem 2rem;
   text-align: center;
   width: 100%;
   max-width: 420px;
   box-sizing: border-box;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .tarjeta__logo {
@@ -110,14 +109,14 @@ body {
   font-weight: 600;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--amarillo-oscuro);
+  color: var(--azul-medio);
 }
 
 .tarjeta__respuesta {
   margin: .5rem 0 0;
   font-size: 1.4rem;
   font-weight: 700;
-  color: var(--azul);
+  color: var(--azul-oscuro);
 }
 
 .tarjeta__boton {
@@ -125,22 +124,22 @@ body {
   margin-top: 2rem;
   padding: .9rem 2rem;
   border-radius: 999px;
-  background: var(--azul);
-  color: var(--amarillo);
+  background: var(--azul-oscuro);
+  color: var(--celeste-claro);
   font-weight: 700;
   text-decoration: none;
 }
 
 .tarjeta__boton:hover {
-  background: var(--azul-oscuro);
-  color: var(--amarillo);
+  background: var(--azul);
+  color: var(--blanco);
 }
 
 .ficha {
   max-width: 520px;
   margin: var(--e-6) auto;
   padding: var(--e-5);
-  border: 1px solid var(--amarillo);
+  border: 1px solid var(--celeste);
   border-top: 6px solid var(--azul);
   border-radius: 12px;
   background: var(--blanco);
@@ -151,14 +150,14 @@ body {
   font-size: .75rem;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--amarillo-oscuro);
+  color: var(--azul-medio);
 }
 
 .ficha__titulo {
   margin: var(--e-2) 0 var(--e-5);
   font-size: 1.6rem;
   line-height: 1.25;
-  color: var(--azul);
+  color: var(--azul-oscuro);
 }
 
 .ficha__campo {
@@ -188,8 +187,8 @@ body {
 .lista li {
   padding: var(--e-1) var(--e-3);
   border-radius: 999px;
-  background: var(--azul);
-  color: var(--amarillo);
+  background: var(--azul-oscuro);
+  color: var(--celeste-claro);
   font-size: .8rem;
 }
 
@@ -208,13 +207,13 @@ body {
   background-color: var(--blanco);
   width: 360px;
   text-align: center;
-  border: 3px solid var(--amarillo);
+  border: 3px solid var(--celeste);
   padding: 30px;
 }
 
 .ideas__imagen img {
-  width: 90px;
-  height: 90px;
+  width: 200px;
+  height: 200px;
   padding: 10px;
 }
 
@@ -233,15 +232,15 @@ body {
   margin-top: 2rem;
   padding: .9rem 2rem;
   border-radius: 999px;
-  background: var(--azul);
-  color: var(--amarillo);
+  background: var(--azul-oscuro);
+  color: var(--celeste-claro);
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .ideas__enlace:hover {
-  background: var(--amarillo);
+  background: var(--celeste);
   color: var(--azul-oscuro);
 }
 
@@ -250,7 +249,7 @@ body {
   font-size: 70px;
   font-weight: 900;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: var(--amarillo);
+  color: var(--celeste-claro);
 }
 
 .container-header {
@@ -285,14 +284,14 @@ body {
 .container-header a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--amarillo);
+  color: var(--celeste-claro);
   font-weight: 800;
   font-size: 1.2rem;
   transition: background-color 0.5s ease;
 }
 
 .container-header a:hover {
-  background-color: var(--amarillo);
+  background-color: var(--celeste);
   color: var(--azul-oscuro);
   padding: 5px;
   border-radius: 8px;
@@ -307,14 +306,14 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   padding: 20px;
-  border-top: 3px solid var(--amarillo);
+  border-top: 3px solid var(--celeste);
   gap: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .footer-bottom a {
-  color: var(--amarillo);
+  color: var(--celeste-claro);
 }
 
 footer {
@@ -337,7 +336,7 @@ footer a {
 
 h4 {
   font-size: x-large;
-  color: var(--amarillo);
+  color: var(--celeste-claro);
 }
 
 .footer-bottom-legal a {
@@ -346,7 +345,7 @@ h4 {
 }
 
 .footer-top-btn {
-  background-color: var(--amarillo);
+  background-color: var(--celeste);
   color: var(--azul-oscuro);
   padding: 8px;
   padding-bottom: 9px;
