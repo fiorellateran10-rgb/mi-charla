@@ -29,6 +29,8 @@
   --texto: #26343B;
   --texto-suave: #526B77;
 
+       /*medida*/
+
   --e-1: .25rem;
   --e-2: .5rem;
   --e-3: 1rem;
@@ -49,7 +51,8 @@ body {
   color: var(--texto);
 }
 
-.desp {
+.desp { 
+  /* display:flex:  contenedor flexible*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,6 +204,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
+}
+
+#idea{
+  background-image: url(./css/asset/familia.jpeg);
 }
 
 .ideas {
